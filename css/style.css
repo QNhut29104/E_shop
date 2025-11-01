@@ -1,0 +1,996 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* -------------------------------------MAIN CSS-------------------------------------------- */
+body, html{
+	width: 1000px;
+	height: 100%;
+	min-height: 600px;
+	margin: auto;
+	font-family: "Montserrat", san-serif;
+	font-weight: 500;
+	font-size: 16px;
+	font-style: normal;
+}
+
+header {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 2em;
+}
+header h1 {
+	margin: 0;
+	font-size: 2.5em;
+}
+header p {
+	font-size: 1.2em;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+.container p {
+	font-size: 1.1em;
+	color: #555;
+}
+
+h3.tensp{
+	color: darkblue;
+	font-size: 22px;
+	font-weight: 800;
+	margin: 0 0 13px 0;
+}
+p {
+	margin: 4px 0;
+}
+p.mota {
+	margin: 8px 0;
+	text-align: justify;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+table.sanpham{
+	margin: 0 14px;
+	border-collapse: collapse;
+	float: left;
+}
+table.sanpham tr{
+}
+table.sanpham td.chitiet{
+	padding: 16px 0 16px 16px;
+}
+table.sanpham td.hinhanh{
+	height: 220px;
+	text-align: center;
+}
+
+.btnmua{
+	color: white;
+	width: 140px;
+	height: 40px;
+	font-family: "Montserrat", san-serif;
+	background-color: red;
+	border: none;
+	border-radius: 6px;	
+	font-weight: 800;
+	z-index: 0;
+}
+.btnthem{
+	color: black;
+	width: 180px;
+	height: 40px;
+	font-family: "Montserrat", san-serif;
+	background-color: lightgray;
+	border: none;
+	border-radius: 6px;	
+	font-weight: 800;
+	z-index: 0;
+}
+.btnmua:hover{
+	background-color: darkred;
+}
+.btnthem:hover{
+	background-color: gray;
+}
+
+
+table.muasanpham{
+	width: calc(34% - 16px);
+	margin-left: 16px;
+	border-collapse: collapse;
+	float: left;
+}
+table.muasanpham tr{
+	border-bottom: thin solid lightgray;
+}
+table.muasanpham td.chitiet{
+	padding: 16px 0 16px 16px;
+}
+table.muasanpham td.hinhanh{
+	height: 220px;
+	text-align: center;
+}
+
+.formmuahang{
+	width: 65%;
+	float: right;
+	margin: 16px 0;
+	border: thin solid lightgray;
+}
+
+table.formmua{
+	width: 100%;
+}
+table.formmua td.cottrai{
+	width: 30%;
+}
+table.formmua td{
+	width: 30%;
+	padding: 6px 0;
+	margin: auto;
+}
+table.formmua td.cotphai{
+	width: 10%;
+	color: red;
+	text-align: center;
+}
+.formlbl{
+	box-decoration-break: clone;
+}
+table.formmua input.text{
+	height: 1.5em;
+	min-width: 300px;
+	border-radius: 5px;
+	border: thin solid gray;
+}
+table.formmua input.number{
+	height: 1.5em;
+	min-width: 60px;
+	border-radius: 5px;
+	border: thin solid gray;
+}
+table.formmua input.submit{
+	height: 30px;
+	min-width: 240px;
+	color: white;
+	background-color: red;
+	margin: 16px;
+	border-radius: 5px;
+	border: none;
+}
+table.formmua input.submit:hover{
+	background-color: darkred;
+}
+table.formmua textarea{
+	min-width: 300px;
+	border-radius: 5px;
+	border: thin solid gray;
+}
+table.formmua select{
+	height: 1.5em;
+	min-width: 60px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: thin solid gray;
+}
+
+
+#header{
+	width: calc(100%-32px);
+	height: 20px;
+	padding: 0 16px;
+	background-color: lightgray;
+	font-size: 12px;
+}
+#login{
+	width: 300px;
+	float: left;
+}
+#time{
+	text-align: right;
+	width: 50%;
+	float: right;
+}
+
+#phantren{
+	width: 100%;
+	height: 60px;
+}
+#phantren .trai{
+	width: 20%;
+	height: 100%;
+
+	float: left;
+}
+#phantren .giua{
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+#phantren .phai{
+	width: 20%;
+	height: 100%;
+	float: right;
+}
+.logo{
+	display: block;
+	margin: 0 30%;
+	padding: 10px 0;
+}
+.thanhtimkiem{
+	height: 40px;
+	margin: 10px;
+	background-color: white;
+	border-radius: 20px;
+	border: thin solid silver;
+}
+.thanhtimkiem .searchbar{
+	height: 70%;
+	width: 70%;
+	border: none;
+}
+.thanhtimkiem .searchbar:focus{
+	outline: none;
+}
+.thanhtimkiem .btn{
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	padding: 10px;
+}
+
+#menutren{
+	width: 100%;
+	height: 30px;
+	clear: both;
+}
+h3.xemthem{
+	text-align: center;
+	clear: both;
+}
+/* ----------------------------------DROPDOWN MENU------------------------------------------ */
+#phantren .phai .dropdown{
+	position: relative;
+	margin: 10px 20px 0px 0px;
+	float: right;
+}
+
+#phantren .phai .dropdown .dropbtn{
+	width: 43px;
+	height: 43px;
+	background-color: rgba(255, 255, 255, 0);
+	border: thin solid lightgrey;
+	border-radius: 100px;
+}
+
+#phantren .phai .dropdown:hover .dropbtn{
+	background-color: lightgrey;
+}
+
+#phantren .phai .dropdown .dropdown-content {
+	display: none;
+	position: absolute;
+	right: 0;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+#phantren .phai .dropdown:hover .dropdown-content{
+	display: block;
+}
+#phantren .phai .dropdown .dropdown-content a {
+	width: 200px;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	float: left;
+	text-align: center;
+}
+#phantren .phai .dropdown .dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+
+#menutren .dropdown{
+	position: relative;
+	float: left;
+}
+#menutren .dropdown .dropbtn{
+	border: none;
+	outline: none;
+	color: back;
+	background-color: inherit;
+	padding: 7px 16px;
+	font-family: "Montserrat", san-serif;
+	font-weight: 500;
+	font-size: 16px;
+	font-style: normal;
+}
+
+#menutren a{
+	float: left;
+	color: black;
+	text-align: center;
+	margin-top: 2px;
+	padding: 6px 16px;
+	text-decoration: none;
+}
+
+#menutren a:hover {
+	background-color: lightgrey;
+	text-decoration: underline;
+}
+
+
+#menutren .dropdown .dropdown-content {
+	width: 364px;
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+#menutren  .dropdown .dropdown-content a:nth-child(odd) {
+	width: 150px;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	float: left;
+	text-align: left;
+}
+#menutren .dropdown .dropdown-content a:nth-child(even) {
+	width: 150px;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	float: right;
+	text-align: left;
+}
+#menutren .dropdown .dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+#menutren .dropdown:hover .dropdown-content{
+	display: block;
+}
+
+#menutren .dropdown .dropdown-content-quanly {
+	width: 182px;
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+#menutren .dropdown .dropdown-content-quanly a{
+	width: 150px;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	float: left;
+	text-align: left;
+}
+#menutren .dropdown .dropdown-content-quanly a:hover {
+	background-color: #ddd;
+}
+#menutren .dropdown:hover .dropdown-content-quanly{
+	display: block;
+}
+
+/* -------------------------------------NOI DUNG CSS------------------------------------------- */
+
+#phangiua{
+	width: 100%;
+	min-height: 400px;
+}
+
+.khungsanpham{
+	width: 230px;
+	height: 300px;
+	margin: 10px;
+	float: left;
+	text-align: justify;
+	display: block;
+}
+.card{
+	height: 190px;
+	margin: 0 8px;
+    padding: 8px 3px;
+	border: solid thin silver;
+	border-radius: 5px;
+	text-align: center;
+}
+
+span.luotxem{
+	color: blue;
+	float: left;
+	font-size: 14px;
+}
+span.luotmua{
+	color: blue;
+	float: right;
+	font-size: 14px;
+}
+span.giagoc{
+	clear: both;
+	float: left;
+	font-size: 14px;
+	margin-top: 3px;
+	text-decoration: line-through;
+}
+span.giaban{
+	color: red;
+	font-weight: bold;
+	float: right;
+}
+span.giamgia{
+	color: white;
+	background-color: red;
+}
+a.tensp{
+	color: darkblue;
+	box-decoration-break: clone;
+	padding: 0 8px;
+	text-decoration: none;
+}
+a.tensp:hover{
+	color: blue;
+	text-decoration: underline;
+}
+img.hinhanhsp{
+	height: 95%;
+}
+
+
+/* -------------------------------------GIO HANG CSS-------------------------------------------- */
+#noidung{
+	clear: both;
+	width: 1000;
+}
+
+#noidung .phantrai{
+	width: 299px;
+	min-height: 100px;
+	float: left;
+}
+#noidung .phanphai{
+	width: 299px;
+	float: left;
+}
+
+#noidung .phangiua{
+	width: 700px;
+	min-height:100px;
+	float: left;
+}
+
+ul{
+	font-weight: 700;
+	padding: 0 0 0 16px;
+	list-style-type: none;
+	display: block;
+}
+li{
+	list-style-type: none;
+	margin: 0 30px 0 0;
+	display: block;
+}
+li :hover{
+	background-color: lightgray;
+}
+li a{
+	color: black;
+	font-weight: 500;
+	padding: 4px 0 4px 16px;
+	text-decoration: none;
+	display: block;
+}
+li a:hover{
+	color: darkblue;
+	text-decoration: underline;
+}
+
+.tensp a{
+	color: inherit;
+	text-decoration: none;
+}
+.tensp a:hover{
+	text-decoration: underline;
+}`
+
+.giohang {
+	display: block;
+}
+.giohang .khungitem{
+	width: 90%;
+	height: 150px;
+	margin: 10px 5%;
+	padding: 10px;
+	border: thin solid silver;
+	display: block;
+}
+.khungitem .checkboxarea{
+	width: 30px;
+	height: 100%;
+	float: left;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.khungitem div.hinhanh{
+	clear: both;
+	width: 180px;
+	height: 100%;
+	float: left;
+}
+.khungitem .chitiet{
+	width: 600px;
+	padding: 0 10px;
+	height: 100%;
+	float: left;
+}
+
+div.tensp{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 20px;
+}
+div.tensp a{
+	font-weight: 800;
+	color: darkblue;
+	display: inline;
+	white-space: nowrap;
+}
+
+.khungitem .muahang{
+	position: relative;
+	display: flex;
+	width: 100px;
+	height: 100%;
+	float: right;
+}
+.khungitem .muahang .btnxoa{
+	color: back;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 0;
+	right: 0;
+	font-family: "Montserrat", san-serif;
+	background-color: lightgray;
+	border: none;
+	border-radius: 6px;	
+	font-weight: 800;
+	z-index: 0;
+}
+.khungitem .muahang .quantity{
+	width: 100%;
+	align-self: center;
+	vertical-align: middle;
+	border-radius: 6px;	
+	z-index: 0;
+}
+.khungitem .muahang .btnmua{
+	color: white;
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	bottom: 0;
+	font-family: "Montserrat", san-serif;
+	background-color: red;
+	border: none;
+	border-radius: 6px;	
+	font-weight: 800;
+	z-index: 0;
+}
+.khuyenmai{
+	width: 60%;
+	height: 1em;
+	border-radius: 6px;	
+	z-index: 0;
+}
+
+
+.khungitem .muahang .btnxoa:hover{
+	background-color: gray;
+}
+.khungitem .muahang .btnmua:hover{
+	background-color: darkred;
+}
+
+
+#phanduoi{
+	clear: both;
+	background-color: #333;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}
+#phanduoi .footer-content {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#phanduoi .footer-section {
+	flex: 1;
+	min-width: 200px;
+	margin: 10px;
+}
+#phanduoi h3 {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+#phanduoi p, footer a {
+	color: #ccc;
+	font-size: 0.9em;
+	line-height: 1.6;
+	text-decoration: none;
+}
+#phanduoi a:hover {
+	color: #fff;
+}
+#phanduoi .social-links a {
+	margin: 0 10px;
+	font-size: 1.2em;
+}
+#phanduoi .copyright {
+	margin-top: 20px;
+	font-size: 0.8em;
+	color: #aaa;
+}
+
+.chitietdonhang{
+	float: left;
+	width: 349px;
+}
+.phandonhang{
+	float: left;
+	width: 645px;
+	border-left: thin solid lightgray;
+}
+.menutrangthai{
+	width: calc(100% - 16px);
+	margin: 8px;
+	overflow: hidden;
+}
+.menutrangthai button{
+	width: 120px;
+	height: 30px;
+	border: none;
+	background-color: inherit;
+}
+.menutrangthai button:hover{
+	color: orange;
+}
+.menutrangthai button.active{
+	color: orange;
+	border-bottom: thin solid orange;
+}
+.tabcontent{
+	display: none;
+	padding: 6px 12px;
+}
+
+.khungdonhang{
+	width: calc(100% - 16px);
+	height: 160px;
+	margin: 8px;
+	border: thin solid silver;
+	border-radius: 10px;
+}
+.khungdonhang:hover{
+	background-color: lightgray;
+}
+.khungdonhang .phantren{
+	position: relative;
+	width: 100%;
+	height: 26px;
+	border-bottom: thin solid lightgray;
+	display: flex;
+}
+.khungdonhang .phantren a{
+	position: absolute;
+	font-weight: 600;
+	text-decoration: none;
+	color: darkblue;
+	margin: auto 8px;
+	left: 0;
+	align-self: center;
+}
+.khungdonhang .phantren a:hover{
+	text-decoration: underline;
+}
+.khungdonhang .phantren .date{
+	position: absolute;
+	font-weight: 600;
+	margin: auto 8px;
+	right: 0;
+	align-self: center;
+}
+
+.khungdonhang .phanduoi{
+	width: 100%;
+	height: calc(100% - 26px);
+	display: flex;
+}
+
+.khungdonhang .phanduoi .hinhanh{
+	width: 20%;
+	height: 120px;
+	margin: auto 8px;	
+	align-self: center;
+	align-content: center;
+	float: left;
+}
+.khungdonhang .phanduoi .chitiet{
+	width: 52%;
+	height: 120px;	
+	align-self: center;
+	float: left;
+}
+.khungdonhang .phanduoi .trangthaiTT{
+	width: 28%;
+	height: 120px;	
+	align-self: center;
+	align-content: center;
+	text-align: center;
+	float: left;
+	display: block;
+}
+.btnlichsu{
+	width: 80%;
+	height: 30px;
+	margin: 12px 0;
+	border: none;
+	border-radius: 6px;
+}
+.btnlichsu:hover{
+	background-color: gray;
+}
+.btnxacminh{
+	width: 80%;
+	height: 30px;
+	border: none;
+	border-radius: 6px;
+	background-color: red;
+	color: white;
+}
+.btnxacminh:hover{
+	background-color: darkred;
+}
+
+.framedonhang{
+	width: 100%;
+	height: 600px;
+}
+
+
+div.xacminh{
+	width: 500px;
+	margin: 16px auto;
+	border: thin solid silver;
+	border-radius: 10px;
+}
+.tblinfo{
+	width: 100%;
+	padding: 8px;
+}
+.formxacminh{
+	width: 100%;
+}
+.tblxacminh{
+	width: 100%;
+	padding: 8px;
+}
+.btnsubmit{
+	width: 100px;
+	height: 30px;
+	margin: 8px;
+	color: white;
+	background-color: red;
+	border: none;
+	border-radius: 10px;
+}
+.btnsubmit:hover{
+	background-color: darkred;
+}
+
+
+
+
+
+/* CSS LOGIN */
+.loginform{
+	display: flex;
+	justify-content: center;
+	padding-top: 3rem;
+}
+.sub-form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30vw;
+	height: 70vh;
+	border-radius: 12px;
+	box-shadow: rgba(50, 50, 93, 0,25) 0px 10px 27px -5px, rgba(0,0,0,0.3) 0px 8px 16px -8px;
+	background-color: white;
+}
+h2.login{
+	margin: 1.5rem 0 2rem 0;
+	text-align: center;
+}
+label{
+	padding-left:16px;
+	opacity: 0.75;
+}
+input.login{
+	display: flex;
+	border-radius: 50px;
+	border-style: none;
+	outline: none;
+	margin-top: 8px;
+	padding:12px 24px;
+	width:250px;
+	background-color: #EAEEED;
+}
+input.login:focus{
+	opacity: 0.75;
+}
+.loginbtn{
+	padding:12px 48px;
+	border-radius: 50px;
+	color: white;
+	margin-top: 1rem;
+	cursor: pointer;
+	outline: non;
+	border-width: 0;
+	background-color: #1A1B27;
+	font-weight: 600;
+	width: 100%;
+
+}
+.loginbtn:hover{
+	opacity: 0.8;
+}
+.button-form{
+	display: flex;
+	justify-content: none;
+	margin-top: 3rem;
+}
+.signup{
+	padding-left: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	color: #21D4FD;
+}
+.signup:hover{
+	opacity: 0.8;
+}
+
+table.danhsach{
+	clear: both;
+	width: calc(100% - 20px);
+	border-collapse: collapse;
+	font-size: 12px;
+	margin: 10px;
+}
+
+table.danhsach th {
+	border: 1px solid #778899;
+	padding: 3px 2px 3px 2px;
+	background: #b0c4de;
+}
+
+table.danhsach td {
+	border: 1px solid #778899;
+	padding: 3px 2px 3px 2px;
+}
+table.danhsach td.tensp {
+	max-width: 250px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+form.formSua{
+	width: 500px;
+	min-height: 100px;
+	border: thin solid lightgray;
+	border-radius: 10px;
+	margin: auto;
+}
+table td.label{
+	width: 200px;
+}
+
+
+input[type=text], input[type=password], input[type=email], input[type=number], textarea{
+	width: 280px;
+	max-width: 300px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px dotted #808000;
+}
+input[type=submit]{
+	width: 120px;
+	height: 30px;
+	margin: 10px 190px;
+}
+a.add{
+	text-decoration: none;
+	color: blue;
+	font-weight: 800;
+	margin-top: 16px;
+	margin-right: 20px;
+	float: right;
+}
+a.add:hover{
+	text-decoration: underline;
+	color: darkblue;
+}
+
+.khungthanhtoan{
+	width: 90%;
+	height: 80px;
+	border: thin solid lightgray;
+	border-radius: 10px;
+	margin: 8px 5%;
+}
+.khungthanhtoan:hover{
+	background-color: lightgray;
+	border: thin solid gray;
+}
+.khungthanhtoan:hover .phantren{
+	border-bottom: thin solid gray;
+}
+.khungthanhtoan .phantren{
+	position: relative;
+	width: 100%;
+	height: 26px;
+	border-bottom: thin solid lightgray;
+	display: flex;
+}
+.khungthanhtoan .phantren a{
+	position: absolute;
+	font-weight: 600;
+	text-decoration: none;
+	color: darkblue;
+	margin: auto 8px;
+	left: 0;
+	align-self: center;
+}
+.khungthanhtoan .phantren a:hover{
+	text-decoration: underline;
+}
+.khungthanhtoan .phantren .date{
+	position: absolute;
+	font-weight: 600;
+	margin: auto 8px;
+	right: 0;
+	align-self: center;
+}
+.khungthanhtoan .phanduoi{
+	position: relative;
+	width: calc(100% - 16px);
+	padding: 0 8px;
+	height: calc(100% - 26px);
+}
+.khungthanhtoan .phanduoi .chitiet{
+	vertical-align: middle;
+	align-content: center;
+	height: 100%;
+	float: left;
+}
+.khungthanhtoan .phanduoi .hinhanh{
+	vertical-align: middle;
+	align-content: center;
+	height: 100%;
+	float: right;
+}
