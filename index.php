@@ -40,20 +40,20 @@
         </div>
         <div class="giua">
             <?php
-                if(!isset($_SESSION['ID']) || $_SESSION['QuyenHan'] == 2){
-            ?>
-                <div class="thanhtimkiem">
-                    <form action="index.php" method="get">
-                        <input type="hidden" name="do" value="search_xuly" />
-                        <button class="btn" type="button">
-                            <i class="fa fa-search" style="font-size: 20px"></i>
-                        </button>
-                        <input type="search" class="searchbar" name="search" id="s" placeholder="Tìm kiếm..." required>
-                    </form>
-                </div>
-            <?php
-                }
-            ?>
+				if(!isset($_SESSION['ID']) || in_array($_SESSION['QuyenHan'], [0,1,2])){
+			?>
+				<div class="thanhtimkiem">
+					<form action="index.php" method="get">
+						<input type="hidden" name="do" value="search_xuly" />
+						<button class="btn" type="submit">
+							<i class="fa fa-search" style="font-size: 20px"></i>
+						</button>
+						<input type="search" class="searchbar" name="search" id="s" placeholder="Tìm kiếm..." required>
+					</form>
+				</div>
+			<?php
+				}
+			?>
         </div>
 
         <div class="phai">
@@ -290,3 +290,4 @@
     </div>
 </body>
 </html>
+
